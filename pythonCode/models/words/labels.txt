@@ -1,0 +1,12 @@
+bye
+good
+help
+hi
+how are you
+i am fine
+i am not feeling well
+i am sorry
+it's ok
+no
+yes
+thank you

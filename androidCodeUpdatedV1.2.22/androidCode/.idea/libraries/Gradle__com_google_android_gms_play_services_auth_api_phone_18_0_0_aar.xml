@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-auth-api-phone:18.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8d8c42d5331ba11606c17514a14bb3a8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8d8c42d5331ba11606c17514a14bb3a8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8d8c42d5331ba11606c17514a14bb3a8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/94e67695befb70f8504bc63b0ddc6bf7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/94e67695befb70f8504bc63b0ddc6bf7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/94e67695befb70f8504bc63b0ddc6bf7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/122b1dab3fb28b242e469d6eaadde3b8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e92a028c6615c904288746f0c0d76203/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/87825290828403fd9a48e4f65fa4076c/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c18a40e0ac739bacb4fb9951359beb91/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e92a028c6615c904288746f0c0d76203/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e92a028c6615c904288746f0c0d76203/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-auth-api-phone/18.0.0/e50322b5fef28962e883380be05fcf2298222b00/play-services-auth-api-phone-18.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

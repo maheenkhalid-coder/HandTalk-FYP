@@ -1,0 +1,4 @@
+#Fri Feb 23 01:19:19 PKT 2024
+base.0=D\:\\signLangProject\\androidCodeUpdatedV1.2.22\\androidCode\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Wed Feb 21 15:24:44 PKT 2024
+1.base=D\:\\signLangProject\\androidCodeUpdatedV1.2.22\\androidCode\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=D\:\\signLangProject\\androidCodeUpdatedV1.2.22\\androidCode\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+1.path=classes.dex

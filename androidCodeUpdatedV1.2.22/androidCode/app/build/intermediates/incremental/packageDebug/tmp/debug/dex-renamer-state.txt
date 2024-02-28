@@ -1,0 +1,7 @@
+#Fri Feb 23 11:43:05 PKT 2024
+base.0=D\:\\signLangProject\\androidCodeUpdatedV1.2.22\\androidCode\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\signLangProject\\androidCodeUpdatedV1.2.22\\androidCode\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out

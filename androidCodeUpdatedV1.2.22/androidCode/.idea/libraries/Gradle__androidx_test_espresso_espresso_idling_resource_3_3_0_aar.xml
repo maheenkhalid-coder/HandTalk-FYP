@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.test.espresso:espresso-idling-resource:3.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6cff42e6c6741f9674c598ff8a38a43a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6cff42e6c6741f9674c598ff8a38a43a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6cff42e6c6741f9674c598ff8a38a43a/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a6e4bd82717de1565e1463f9130e9d54/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a6e4bd82717de1565e1463f9130e9d54/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a6e4bd82717de1565e1463f9130e9d54/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c08fcd444620071a945a7cda0e2de4b3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4669a516b3a45bc00aebe93f9066fe5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/23583b75db6f3bb41cb3f1246e318f9b/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31dd4e0077d7d0fece2bb8f041303a41/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4669a516b3a45bc00aebe93f9066fe5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4669a516b3a45bc00aebe93f9066fe5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-idling-resource/3.3.0/ac774bb29e6171578dc7508bf390a4a3ccbedfea/espresso-idling-resource-3.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.espresso/espresso-idling-resource/3.3.0/ee0f3ffdd7782d68dbe1eafa9337872817cb299e/espresso-idling-resource-3.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

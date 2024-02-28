@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+<script src="jquery.js"></script>
+<style>
+	*{
+		margin: 0;
+		font-family: arial;
+	}
+	.heading{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		display: block;
+		margin: 50px;
+		margin-top: 100px;
+	}
+	.box{
+		margin: auto;
+		width: 90%;
+		background: #fff;
+		border: 1px solid #e9e9e9cc;
+		display: grid;
+		justify-content: normal;
+		align-items: center;
+		height: 360px;
+		border-radius: 2vw;
+	}
+	#login-icon{
+		background-image: url('loginimg.png');
+		background-size: cover;
+		background-position: center;
+		width: 64px;
+		height: 64px;
+		margin: 20px auto;
+	}
+	input{
+		margin: 10px 20px;
+		padding: 15px;
+	}
+	.input{
+		border: 0;
+		border-bottom: 1px solid #a6a6a6;
+	}
+	input {
+		outline:none;
+	}
+	.submit{
+		background: #181F3B;
+		color: #fff;
+		margin: 8px 20px;
+		border-radius: 1vw;
+		border: 1px solid transparent;
+	}
+	#bg{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url('bg2.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+		opacity: 0.5;
+	}
+	.grid{
+		display: grid;
+	}
+	.m{
+		margin: 20px 0px;
+	}
+	#msg{
+		text-align: center;
+		padding: 10px;
+		color: #ff3232;
+	}
+	a{
+		text-decoration: none;
+		color: #333;
+		text-align: center;
+		padding-top: 10px;
+		font-size: 14px;
+	}
+</style>
+</head>
+<div id="bg"></div>
+<span class="heading">Create account</span>
+<div class="box" id="signupForm">
+	<div id="login-icon"></div>
+	<input class="input" type="text" id="email" placeholder="Enter your email">
+	<div class="grid m">
+		<input type="submit" onclick="request();" class="submit" value="Create an account">
+		<a type="submit" href="login.html"><b>Already a user?</b> Login here</a>
+	</div>
+	<span id="msg"></span>
+</div>
+
+<script>
+	var login = localStorage.getItem("login");
+	var smail = localStorage.getItem("email");
+	var spass = localStorage.getItem("pass");
+
+	// Get elements
+	var emailField = document.getElementById('email');
+	var signupForm = document.getElementById('signupForm');
+	var message = document.getElementById('msg');
+
+
+	console.log(login);
+	if(login == 'true'){
+		window.location.assign("index.html");
+		console.log("redirect");
+	}
+
+	function validateEmail(email) {
+	  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	  return regex.test(email);
+	}
+	
+	
+
+	// Add signup event
+	function request(){
+	  
+	  var email = emailField.value;
+	  const isValidEmail = validateEmail(email);
+
+		if (isValidEmail) {
+		  console.log("Email is valid");
+		  xhrSend(email);
+		} else {
+		  console.log("Email is not valid");
+		}
+	  // Sign up
+	  
+	}
+	
+	function xhrSend(email) {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		  var resp = this.responseText;
+		  document.getElementById("msg").innerHTML = "Password Sent to Your Email";
+		  if(resp == 'Email sent successfully'){
+			document.getElementById("msg").innerHTML = "Password Sent to Your Email";
+			// Redirect to index.html after 5 seconds
+			setTimeout(function() {
+			  window.location.href = 'login.html';
+			}, 5000); // 5000 milliseconds = 5 seconds
+
+		  }else if(resp == 'email exists'){
+			document.getElementById("msg").innerHTML = "Email already exists";
+		  }else {
+			document.getElementById("msg").innerHTML = "Unable to create account!";
+		  }
+		}else{
+			//document.getElementById("msg").innerHTML = "Error! Cloud Service not working";
+		}
+	  };
+	  xhttp.open("GET", "https://project.uxeer.org/signlanguage/accountrequest.php?email="+email, true);
+	  xhttp.send();
+	}
+
+</script>
+</body>
+</html>

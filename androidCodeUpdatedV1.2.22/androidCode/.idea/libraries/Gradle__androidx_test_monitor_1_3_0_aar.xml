@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.test:monitor:1.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84f1ea63c2c4ca9d69148f2689c0a3ee/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84f1ea63c2c4ca9d69148f2689c0a3ee/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84f1ea63c2c4ca9d69148f2689c0a3ee/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e44d35c82324cc4ccfaef0420ed926/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e44d35c82324cc4ccfaef0420ed926/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e44d35c82324cc4ccfaef0420ed926/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2af20b4b0a6e6bceecf1908c458661ab/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d1baed288c4647d40cff30df205d9b90/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0bc72b59ebfb1f539c595fb3e0ecf30/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b6a285294a5a7d7c13a2e987e8ce76c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d1baed288c4647d40cff30df205d9b90/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d1baed288c4647d40cff30df205d9b90/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/monitor/1.3.0/3a80466a460e22ec785a9c0ad1a1cbaf6a08c0ee/monitor-1.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/monitor/1.3.0/42fd8fe34ba94b2e75f5df0b3184887af6f98670/monitor-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

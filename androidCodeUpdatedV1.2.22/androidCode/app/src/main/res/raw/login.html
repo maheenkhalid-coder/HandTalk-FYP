@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+<script src="jquery.js"></script>
+<style>
+	*{
+		margin: 0;
+		font-family: arial;
+		-webkit-tap-highlight-color: transparent; /* Remove the highlight color */
+		touch-action: manipulation; /* Improve touch responsiveness */
+	}
+	.heading{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		display: block;
+		margin: 50px;
+		margin-top: 100px;
+	}
+	.box{
+		margin: auto;
+		width: 90%;
+		background: #fff;
+		border: 1px solid #e9e9e9cc;
+		display: grid;
+		justify-content: normal;
+		align-items: center;
+		#height: 300px;
+		border-radius: 2vw;
+	}
+	#login-icon{
+		background-image: url('loginimg.png');
+		background-size: cover;
+		background-position: center;
+		width: 64px;
+		height: 64px;
+		margin: 20px auto;
+	}
+	input{
+		margin: 10px 20px;
+		padding: 15px;
+	}
+	.input{
+		border: 0;
+		border-bottom: 1px solid #a6a6a6;
+	}
+	
+	.submit{
+		background: #181F3B;
+		color: #fff;
+		margin: 8px 20px;
+		border-radius: 2vw;
+		border-color: transparent;
+	}
+	#bg{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url('bg2.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+		opacity: 0.5;
+	}
+	.grid{
+		display: grid;
+	}
+	.m{
+		margin: 20px 0px;
+	}
+	#msg{
+		text-align: center;
+		padding: 10px;
+		color: #ff3232;
+	}
+	#splash{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		display: grid;
+		justify-content: center;
+		background: #fff;
+	}
+	#splash img{
+		margin: auto;
+		width: 250px;
+	}
+	input {
+ outline:none;
+}
+</style>
+</head>
+<div id="splash">
+	<img src="splash.jpg">
+</div>
+<div id="bg"></div>
+<span class="heading">LOGIN</span>
+<form class="box" id="loginForm">
+	<div id="login-icon"></div>
+	
+		<input class="input" type="text" id="email" placeholder="Enter your email">
+		<input class="input" type="password" id="pass" placeholder="Password">
+		<input class="submit" type="submit" value="Login">
+		<input type="submit" onclick="sob();" class="submit" value="Create an account">
+		<span id="msg"></span>
+</form>
+	
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script>
+	var login = localStorage.getItem("login");
+	var queryString = window.location.search;
+	// Get elements
+	var emailField = document.getElementById('email');
+	var passwordField = document.getElementById('pass');
+	var loginForm = document.getElementById('loginForm');
+	var message = document.getElementById('msg');
+
+	function exit(){
+		Android.exitApp();
+	}
+	
+	if(login == 'true'){
+		window.location.assign("index.html");
+		console.log("redirect");
+	}
+	
+	function sob(){
+		window.location.assign('accounts.html');
+	}
+
+	if (queryString.includes('?splash=true')) {
+		window.onload = function() {
+		  setTimeout(hideLoading, 5000);
+		};
+
+	}else{
+		hideLoading();
+	} 
+
+	function hideLoading() {
+		document.getElementById('splash').style.display = 'none';
+	}
+
+
+
+	
+
+	// Add login event
+	loginForm.addEventListener('submit', function(event) {
+	  event.preventDefault(); // Prevent form from submitting
+
+	  var email = emailField.value;
+	  var password = passwordField.value;
+	  var server = "https://project.uxeer.org/signlanguage/";
+	  console.log(email);
+	  requestLogin(server, email, password)
+	  
+	});
+	
+	function requestLogin(server, email, password) {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		  //document.getElementById("msg").innerHTML =
+		  //this.responseText;
+		  if(this.responseText == 'ok'){
+			message.textContent = 'Logged in successfully!';
+			localStorage.setItem("login", true);
+			localStorage.setItem("email", email);
+			localStorage.setItem("pass", password);
+			window.location.assign("index.html");
+			console.log("true");
+		  }else{
+			message.textContent = 'Invalid account';
+		  }
+		}
+	  };
+	  xhttp.open("GET", server+"accounts.php?email="+email+"&password="+password, true);
+	  xhttp.send();
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.test:runner:1.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc7abf3950425b17b505d36bdd3fda6a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc7abf3950425b17b505d36bdd3fda6a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc7abf3950425b17b505d36bdd3fda6a/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458cb58bb8b6459c5722dbeedfbf2230/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458cb58bb8b6459c5722dbeedfbf2230/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/458cb58bb8b6459c5722dbeedfbf2230/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/395f54bdaa35294ca1da5f460ff85925/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef77f65fa3aa32132a58a9971ad24af8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4288ba4a231a656f05cb798fb2437053/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d8162c9f9abeb53c603b220c322fcf02/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef77f65fa3aa32132a58a9971ad24af8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef77f65fa3aa32132a58a9971ad24af8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/runner/1.3.0/c0fd1f1e715bfa4777ae6a679444f7471205ee7c/runner-1.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/runner/1.3.0/506c97f735db13fda1943c4eb95f2ccfc7b457e0/runner-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
